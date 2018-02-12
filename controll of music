@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nandha EEE Hhackathon - Online Music Player</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+	<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function play_music() {
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', 'music/success.wav');
+            audioElement.setAttribute('autoplay', 'autoplay');
+            audioElement.setAttribute('controls', 'true');
+            audioElement.load();
+            audioElement.play();
+		}
+    </script>
+</head>
+<body>
+	
+	<section class="container">
+		
+		<div id="player">
+			
+			<div class="caratula">
+				<img src="http://4.bp.blogspot.com/_NsAexvbcSn0/ST20kHuQRSI/AAAAAAAAA8s/Y3G2PNLdKdU/s400/Teleradio_cover.jpg">
+			</div>
+
+			<div class="time">
+				<div class="progress"></div>
+			</div>
+
+			<div class="info">
+					<div class="love">
+						<div class="icon-heart"></div>
+						<div class="icon-star-empty"></div>
+					</div>
+				<div class="elapsed">2:40</div>
+				<h2>Nandha EEE Hhackathon</h2>
+				<h3>Online Music Player</h3>
+			</div>
+
+			<div class="controls">
+				<ul>
+					<li><div class="icon-backward btn"></div></li>
+					<li><div class="icon-pause btn" onClick="pause_music();"></div></li>
+					<li class="play"><div class="icon-play btn" onClick="play_music();"></div></li>
+					<li><div class="icon-stop btn"></div></li>
+					<li><div class="icon-forward btn"></div></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
+    <script src="js/index.js"></script>
+</body>
+</html>
